@@ -1,0 +1,349 @@
+/* Standard css start here */
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+fieldset,
+figure,
+label {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0
+}
+
+input,
+select,
+a,
+textarea,
+button {
+    outline: none
+}
+
+a {
+    height: 100%;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0px auto -webkit-focus-ring-color;
+    color: inherit;
+}
+
+
+/* Standard css end here */
+
+
+/* For remove input number up down aero */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+/* For remove input number up down aero */
+
+.mainContainer {
+    /* justify-content: center;
+    display: flex; */
+    max-width: 609px;
+    margin: 60px auto;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.mainContainer.loaded {
+    opacity: 1;
+}
+
+.orangeText {
+    color: #f56b36;
+}
+
+.blackHeader {
+    background-color: #504f4f;
+    padding: 16px 0px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.blackHeader::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: #504f4f;
+    transform: rotate(134deg);
+    bottom: calc(0px - 5px);
+}
+
+.blackHeader p {
+    color: #fff;
+    text-align: center;
+}
+
+.greenButton {
+    color: #fff;
+    outline: none;
+    background-color: #1cc31c;
+    border: none;
+    border-radius: 3px;
+    margin: 0;
+    height: 100%;
+    width: max-content;
+    padding: 0px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.greenButton:focus {
+    background-color: #504f4f;
+}
+
+.inputBorder.border {
+    border: 1px solid #1cc31c;
+}
+
+.outerContainer {
+    margin: 12px 0px 22px 0px;
+}
+
+.internalContainer {
+    padding: 10px 24px 32px 24px;
+    display: flex;
+    border: 2px solid #dedddd;
+    border-top: 0;
+}
+
+.whitButton {
+    color: #736e6e;
+    font-weight: 500;
+    padding: 14px 28px;
+    font-size: 18px;
+    background-color: #fbfbfb;
+    border: 1px solid #dedddd;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px #dedddd;
+    cursor: pointer;
+}
+
+.whitButton:focus {
+    background-color: #1cc31c;
+    color: #fff;
+    box-shadow: 0px 0px 0px #dedddd;
+}
+
+.contentShift {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightSpaceTweleve {
+    padding-right: 12px;
+}
+
+.bottomSpaceTwelve {
+    padding-bottom: 12px;
+}
+
+.textBlue {
+    color: #50b8e2;
+}
+
+.textBlue:focus {
+    transition: 0.2;
+    color: #504f4f;
+}
+
+.inputNumber {
+    margin: 0;
+    border: none;
+    font-size: initial;
+    height: 100%;
+    padding: 0px 5px;
+    width: 103px;
+}
+
+.dollarSign {
+    font-size: 17px;
+    color: #736e6e;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 7px;
+    padding-bottom: 8px;
+}
+
+.inputBorder {
+    border: 1px solid #dedede;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+
+.inputButtonContainer {
+    display: flex;
+    height: max-content;
+}
+
+.progressContainer {
+    height: 12px;
+    border-bottom: 0;
+    border: 2px solid #dedddd;
+}
+
+.progresBar {
+    display: block;
+    width: 42%;
+    height: 100%;
+    background-color: #f56b36
+}
+
+.coloGray {
+    color: #736d6d
+}
+
+
+/* For Loader css */
+
+.loading.remove {
+    display: none;
+}
+
+.pCenter {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.loading {
+    width: 8em;
+    height: 2em;
+    font-size: 24px;
+    /* set the loading ratio */
+}
+
+.containerBubble {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: left;
+}
+
+[class*="bubble-"] {
+    background: #383838;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    animation: inflate 1.5s linear infinite;
+}
+
+.bubble-1 {
+    animation-delay: 0s;
+    background: #0057e7;
+}
+
+.bubble-2 {
+    animation-delay: 0.25s;
+    background: #d62d20;
+}
+
+.bubble-3 {
+    animation-delay: 0.50s;
+    background: #ffa700;
+}
+
+.bubble-4 {
+    animation-delay: 0.75s;
+    background: #008744;
+}
+
+@keyframes inflate {
+    0% {
+        width: 1em;
+        height: 1em;
+    }
+    33% {
+        width: 2em;
+        height: 2em;
+    }
+    66% {
+        width: 1em;
+        height: 1em;
+    }
+    100% {
+        width: 1em;
+        height: 1em;
+    }
+}
+
+
+/* For Loader css */
+
+
+/* For responsiveness */
+
+@media (max-width: 622px) {
+    .mainContainer {
+        padding: 0px 22px;
+    }
+}
+
+@media (max-width: 556px) {
+    .internalContainer {
+        flex-direction: column;
+    }
+    .whitButton {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .rightSpaceTweleve {
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .contentShift div:first-child {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .blackHeader::after {
+        right: 22%;
+    }
+    .progresBar {
+        width: 67%;
+    }
+    .internalContainer {
+        padding: 10px 24px 32px 11px;
+    }
+    .mainContainer {
+        padding: 0px 10px;
+    }
+}
+
+
+/* For responsiveness */
