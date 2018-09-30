@@ -3,7 +3,16 @@ var borderInput = document.querySelector(".inputBorder");
 focusInput.addEventListener("focus", function() {
     borderInput.className = "inputBorder border";
 })
+
 focusInput.addEventListener("focusout", function() {
+    borderInput.className = "inputBorder";
+})
+
+focusInput.addEventListener("mouseenter", function() {
+    borderInput.className = "inputBorder border";
+})
+
+focusInput.addEventListener("mouseleave", function() {
     borderInput.className = "inputBorder";
 })
 
@@ -26,6 +35,7 @@ setTimeout(function() {
         }
     }, 2000)
     // For Loader
+
 if (window.chrome && window.chrome.webstore) {
 
 } else {
