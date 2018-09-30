@@ -324,6 +324,9 @@ input[type=number]::-webkit-outer-spin-button {
     .rightSpaceTweleve {
         padding-bottom: 15px;
     }
+    .internalContainer {
+        padding: 10px 24px 43px 11px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -338,9 +341,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .progresBar {
         width: 67%;
-    }
-    .internalContainer {
-        padding: 10px 24px 32px 11px;
     }
     .mainContainer {
         padding: 0px 10px;

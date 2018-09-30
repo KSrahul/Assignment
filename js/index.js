@@ -33,7 +33,7 @@ setTimeout(function() {
         } else {
 
         }
-    }, 2000)
+    }, 2800)
     // For Loader
 
 if (window.chrome && window.chrome.webstore) {
