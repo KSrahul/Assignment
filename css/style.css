@@ -25,7 +25,7 @@ select,
 a,
 textarea,
 button {
-    outline: none
+    /* outline: none */
 }
 
 a {
@@ -101,7 +101,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .greenButton {
     color: #fff;
-    outline: none;
     background-color: #1cc31c;
     border: none;
     border-radius: 3px;
@@ -179,20 +178,23 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     font-size: initial;
     height: 100%;
-    padding: 0px 5px;
-    width: 103px;
+    padding: 0px 18px;
+    width: 92px;
 }
 
 .dollarSign {
     font-size: 17px;
     color: #736e6e;
+    position: absolute;
+    display: block;
+    padding-left: 6px;
 }
 
 .inputContainer {
+    position: relative;
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 7px;
     padding-bottom: 8px;
 }
 
@@ -316,6 +318,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media (max-width: 556px) {
     .internalContainer {
         flex-direction: column;
+        padding: 10px 24px 43px 11px;
     }
     .whitButton {
         padding: 12px 20px;
@@ -324,8 +327,8 @@ input[type=number]::-webkit-outer-spin-button {
     .rightSpaceTweleve {
         padding-bottom: 15px;
     }
-    .internalContainer {
-        padding: 10px 24px 43px 11px;
+    .outerContainer {
+        margin: 12px 0px 16px 0px;
     }
 }
 
