@@ -18,7 +18,7 @@ focusInput.addEventListener("mouseleave", function() {
 
 // ESC key press for remove select value and outline
 document.addEventListener("keyup", function(escPress) {
-        if ((borderInput.className == "inputBorder border") && (escPress.keyCode == 27)) {
+        if ((borderInput.className == "inputBorder border") && (escPress.keyCode == 27) && (escPress.keyCode == 69)) {
             borderInput.className = "inputBorder";
             focusInput.blur()
         }
